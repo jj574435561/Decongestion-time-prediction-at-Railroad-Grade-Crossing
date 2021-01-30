@@ -88,7 +88,7 @@ for path in img_pathes:
     if i == 1:
         backg_avg = np.float32(smooth_frame)
     else:    
-        if runaverage_fractions[-1] < 0.001:
+        if runaverage_fractions[-1] < 0.01:
             backg_avg = (backg_avg + np.float32(smooth_frame))/2
     
     
